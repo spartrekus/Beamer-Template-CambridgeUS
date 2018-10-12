@@ -1,0 +1,33 @@
+
+\documentclass[14pt,t]{beamer}
+\usetheme{CambridgeUS}
+%gets rid of bottom navigation bars, then reset with {}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}{}
+\addtobeamertemplate{headline}{}{\textcolor{white}{\rule{\paperwidth}{5pt}}
+}
+\setbeamertemplate{footline}[frame number]{}
+%%%%\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{background.jpg}}    <-- this is cool
+\newcommand{\lt}{\ensuremath{<}\thinspace}%
+\newcommand{\gt}{\ensuremath{>}\thinspace}%
+
+\title{Slides}
+\author{Username}
+\graphicspath{{figs/}}
+
+\begin{document}
+\maketitle
+\begin{frame}
+\frametitle{Header}
+\begin{itemize}
+\item line1
+\begin{itemize}
+\item item1
+\item item2
+\end{itemize}
+\end{itemize}
+\end{frame}
+\end{document}
+
+
+
